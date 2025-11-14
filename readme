@@ -177,10 +177,62 @@ JS OPERATORS
  /= (divide and assign)
  **= (raise to a number assign the number to a value)
  %= (get remainder and assign)
- 
+
+ 5.TASK 
+ Slide 56 and 57
+1. Find out what the 'in' operator does and illustrate with Javascript code - use w3schools or geeksforgeeks as references
+
+2. Write a program that takes 2 numeric user inputs and outputs the following:
+  -> their sum
+  -> their subtraction
+  -> their modulus
+  -> their exponent
+
+3.  review & redo any undone task on slide 57
 
 
+**CONDITIONAL STATEMENTS*
+-> Enables us  to write programs that make decisions based on inputs
+
+-> if-else statements 
+-> syntax: {}---> represents a block
+
+scenario -> you have multiple conditions
+if, else if, else
+
+if (condition) {
+  code to execute if condition is true
+} else if (condition 2) {
+  code to execute
+} else if {
+  code to execute
+} else {
+  code to execute if none of the conditions are met
+}
  
+      **In class Task**
+1.Write a program that checks which number is the largest
+among 3 numbers --> takes user input
+
+2.Using if statements write a program that checks whether a number is odd or even
+
+**ternary operator**
+-> ?
+-> shorthand for if-else statements
+-> works only when there is one condition
+-> syntax:
+   condition ? expression if condition is true : expression if condition is false
+
+   In class task
+1.Write a program using ternary operator that checks whether a person is an
+eligible voter -> criteria: an eligible voter has to be 18 years old or older
+
+**Task**
+-Slide 66
+
+
+
+
 
 
 
