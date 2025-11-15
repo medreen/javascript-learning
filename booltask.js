@@ -14,15 +14,17 @@ if (email.includes("@") && email.length <= 7 && email.includes(".com")){
     console.log("Email is valid.")}
 else{
     console.log("Can't verify Email.")}
-
-
-if (phone.includes("+") && phone.startsWith("+") && phone.length == 13){    
+    
+if (/[a-zA-Z]/.test(phone)) {
+    console.log("Check number.")
+}
+else if (phone.includes("+") && phone.startsWith("+") && phone.length == 13){    
     console.log("Phone number is valid.")
-} else if(phone.length == 12 && phone.startsWith("254")){
+} else if(phone.length === 12 && phone.startsWith("254")){
     console.log("Phone number is valid.")
-} else if (phone.length == 10 && phone.startsWith("0")){
+} else if (phone.length === 10 && phone.startsWith("0")){
     console.log("Phone number is valid.")
-} else if(phone.length == 9 && phone.startsWith("1") || phone.startsWith("7")){
+} else if(phone.length === 9 && phone.startsWith("1") || phone.startsWith("7")){
     console.log("Phone number is valid.")
 } else {
     console.log("Check number.")
