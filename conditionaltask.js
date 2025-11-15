@@ -1,13 +1,21 @@
-let number = 90
+let number = Number(prompt("Enter a number(check if even or odd): "))
+num1 = Number(prompt("Enter a number(check largest number): "))
+num2 = Number(prompt("Enter a number(check largest number): "))
+year = Number(prompt("Enter a year(check if leap year): "))
+temp = Number(prompt("Enter user temoerature(degrees celcius): "))
+x = Number(prompt("Enter a number(condition): "))
+y = Number(prompt("Enter a number(condition): "))
+password = Number(prompt("Enter password(check password match): "))
+student_score = password = Number(prompt("Enter student score: "))
+attendance = password = Number(prompt("Enter student attendance: "))
+
 
 if (number%2 == 0){
-    console.log(`${number} is odd`)
+    console.log(`${number} is even`)
 } else {
     console.log(`${number} is odd`)
 }
 
-num1 = 89
-num2 = 78
 
 if (num1 > num2) {
     console.log(`${num1} is greater than ${num2}`)
@@ -15,7 +23,6 @@ if (num1 > num2) {
     console.log(`${num2} is greater than ${num1}`)
 }
 
-year = 1900
 
 if (String(year).endsWith("00") && year % 400){
     console.log(`${year} is a leap year`)
@@ -23,7 +30,6 @@ if (String(year).endsWith("00") && year % 400){
     console.log(`${year} is a leap year`)
 }
 
-temp = 34
 
 if (temp > 30){
     console.log("The temperature is too high.")
@@ -33,8 +39,6 @@ if (temp > 30){
     console.log("Cold temperature.")
 }
 
-x = 12
-y = 18
 
 if (x >= 10 && x <= 20 || y > 100) {
     console.log("Conditions met.")
@@ -43,13 +47,9 @@ if (x >= 10 && x <= 20 || y > 100) {
 }
 
 
-password = "nme"
 secret_password = "secret123"
-
 if (password == secret_password) { console.log("Access") } else {console.log("Access denied")}
 
-student_score = 89
-attendance = 78
 
 if (student_score > 90){
     if (attendance > 80){
