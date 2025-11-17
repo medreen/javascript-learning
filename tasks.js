@@ -1,4 +1,13 @@
-let str = "medreen"
+let str = prompt("Enter any text: ")
+let age = Number(prompt("Enter your age: "))
+let purchase_amount = Number(prompt("Enter any number: "));
+let val = Number(prompt("Ente any value: "))
+let variable = prompt("Enter any value: ");
+let num = prompt("Enter any number: ")
+let my_num1 = Number(prompt("Enter a number:(comparison): "))
+let my_num2 = Number(prompt("Enter a number:(comparison): "))
+let my_num3 = Number(prompt("Enter a number:(comparison): "))
+let last_digit = Number(prompt("Enter any number(divisible by 3): "));
 
 if (str.length = 0) {
     console.log("Empty")
@@ -13,7 +22,7 @@ else {
 }
 
 
-let age = 23
+
 let ticket_price = 0
 if (age < 12){
     ticket_price += 5
@@ -30,7 +39,7 @@ if (age < 12){
 }
 console.log(ticket_price)
 
-let purchase_amount = 800;
+
 let discount = 0
 if (purchase_amount <= 100 && purchase_amount  >= 50){
     discount += 20
@@ -41,14 +50,14 @@ if (purchase_amount <= 100 && purchase_amount  >= 50){
 }
 console.log(discount)
 
-let val = 5
+
 if (val === 5){
     console.log("Match")
 } else if (val == 5){
     console.log("Match")
 }
 
-let variable = '9';
+
 
 if (variable.length === 0) {
     console.log("yes");
@@ -60,7 +69,7 @@ if (variable.length === 0) {
     console.log("Not valid");
 }
 
-let num = 7.0
+
 if (typeof num !== "number" || isNaN(num)) {
     console.log("Not a number");
 } else if (Number.isInteger(num)) {
@@ -72,9 +81,7 @@ if (typeof num !== "number" || isNaN(num)) {
 
 //7
 
-my_num1 = 90
-my_num2 = 167
-my_num3 = 156
+
 
 if (my_num1 > my_num2 && my_num2 > my_num3){
     console.log(`${my_num1}, ${my_num2}, ${my_num3}`)
@@ -92,7 +99,7 @@ if (my_num1 > my_num2 && my_num2 > my_num3){
     console.log("Not a Number.")
 }
 
-let last_digit = 89;
+
 
 let lastChar = String(last_digit)[String(last_digit).length - 1];
 let lastNum = Number(lastChar);
