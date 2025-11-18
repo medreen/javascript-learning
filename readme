@@ -319,15 +319,51 @@ in ascending order from smallest to largest
 
         **task**
         **Research on what each of the methods below do and how they're used:
-7.splice()
-8.slice()
-9.indexOf()
-10.lastIndexOf()
-11.includes()
-12.sort()
-13.reverse()
-14.join()
-15.toString()
-16.copyWithin()
-17.at()
+7.splice() -adds, removes or replaces elements depending on the parameter signature
+          .splice(start, delete count, items to add)
+8.slice() -extracts a portion of an array and returns a new array.
+          .slice(start, end) //not includin the end index
+9.indexOf() - returns the position of the first occurence of a value in an array
+10.lastIndexOf() - returns the position or index but starting from the end (last occurence)
+11.includes() - checks for the passed value in an array
+12.sort() - arranges the values in an array in alphabetical order
+13.reverse() - reverses the order of the items in an array
+14.join() - joins the values in an array and it also takes a separator 
+15.toString() - converts the values of an array to a string
+16.copyWithin() - copies values inside the index
+          copyWithin(target, start, end)
+17.at() - returns the values of an array at a specified position (allows negative index)
 
+        **OBJECTS*
+-are data structure that stores items in key value pairs.
+
+ Properties of objects
+--> store data in key value pairs
+--> use keys to access values
+--> keys are unique
+--> have to be strings
+--> values can be of any data type
+--> key value pairs / properties are comma separated
+--> keys give description / meaning to values
+
+represented using {}
+
+**Properties - are the combinations of keys and values
+1.Creating an Object
+2.Accessing values in an object => use keys
+    -bracket notation 
+          -uses square brackets taking keys as strings
+          -can accept
+
+
+    -dot notation
+          (.) followed by the key(dot operator)
+          can only used with keys that follow identifier naming rules
+          -can't work for keys with spaces
+
+Object Methods
+-> .keys() -- returns all keys in an object
+-> values() -- returns all values in an object
+-> .entries() -- returns all arrays
+
+slides 69 - 70, 75 - 76
