@@ -22,7 +22,6 @@ else {
 }
 
 
-
 let ticket_price = 0
 if (age < 12){
     ticket_price += 5
@@ -56,7 +55,6 @@ if (val === 5){
 } else if (val == 5){
     console.log("Match")
 }
-
 
 
 if (variable.length === 0) {

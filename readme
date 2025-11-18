@@ -286,9 +286,48 @@ in ascending order from smallest to largest
 
 9.Write a program to check whether the last digit entered by a user is divisible by 3
 
+                **JS DATA STRUCTURES**
+-> Use d/ss to store multiple values in variables
+1.Arrays
+2.Objects
 
+                **JS ARRAYS**
+-> A data structure used to hold muliple values in an ordered manner
+-> represented using []
+-> this is the equivalent of lists in Python
 
+                **Properties of Arrays**
+1.They are ordered  - uses indexing
+        N/B:- *No -ve indexing in JS arrays
+2.They are mutable - values can be changed
+3.They can contain multiple values of any data type
 
+-> Values in an array are comma-separated
 
+                **Array Operations**
+1.Creating an array 
+2.Accessing values in an array - use indexing 
+        -> indexing is zero based 
+3.Updating values in an array - use index 
+4.Determine the no of values in an array => length
+5.Adding items to an array:
+        a) Add at the end - push()
+        b) Add at the beginning - unshift()
+6.Removing items from an array:
+        a) Remove the first item - shift()
+        b) Remove the last item - pop()
 
+        **task**
+        **Research on what each of the methods below do and how they're used:
+7.splice()
+8.slice()
+9.indexOf()
+10.lastIndexOf()
+11.includes()
+12.sort()
+13.reverse()
+14.join()
+15.toString()
+16.copyWithin()
+17.at()
 
