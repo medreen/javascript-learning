@@ -366,4 +366,144 @@ Object Methods
 -> values() -- returns all values in an object
 -> .entries() -- returns all arrays
 
-slides 69 - 70, 75 - 76
+**TASK**
+1.slide 69 & 70 -> arrays
+2.slide 75 & 76 -> objects
+
+3. In the object below , output the following values:
+a) "Deploy to Netlify"
+b.)"updates"
+c.)"Lake View Road" 
+d.)"PostgreSQL"
+
+
+const userProfile = {
+  id: 101,
+  name: {
+    first: "Brian",
+    last: "Letting"
+  },
+  contact: {
+    email: "jeff@example.com",
+    phones: ["+254700000001", "+254700000002"]
+  },
+  address: {
+    current: {
+      city: "Nairobi",
+      street: "Westlands Ave",
+      postalCode: "00100"
+    },
+    previous: [
+      {
+        city: "Eldoret",
+        street: "Main Street",
+        postalCode: "30100"
+      },
+      {
+        city: "Kisumu",
+        street: "Lake View Road",
+        postalCode: "40100"
+      }
+    ]
+  },
+  preferences: {
+    theme: "dark",
+    language: "en",
+    notifications: {
+      email: true,
+      sms: false,
+      push: ["promotions", "updates"]
+    }
+  },
+  projects: [
+    {
+      id: 1,
+      name: "POS System",
+      technologies: ["React", "FastAPI", "PostgreSQL"],
+      tasks: [
+        { title: "Set up DB", done: true },
+        { title: "Design UI", done: false }
+      ]
+    },
+    {
+      id: 2,
+      name: "Portfolio Website",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      tasks: [
+        { title: "Create About Page", done: true },
+        { title: "Deploy to Netlify", done: false }
+      ]
+    }
+  ]
+};
+
+
+**SPREAD & REST OPERATOR**
+1.Spread(...)
+-> used to expand or unpack items in arrays or objects - unpacks elements
+2.Rest (...)
+-> used to group many items or values into a single array - packs elements
+
+
+
+**Optional Chaining
+- Is a way to safely access deeply nested properties in objects without running into errors
+-uses ? operator
+
+Kisumu ----- Nakuru ----- Nairobi ----- Voi ------ Mombasa
+
+
+***Task***
+1.Without using loops or reverse() method , reverse the following array
+        const arr = [10,20,30,40,50]
+
+2.Split an array into chunks of size n using spread and rest.
+        const arr2 = [1,2,3,4,5,6,7,8]
+
+3.
+const userProfile = {
+  id: 101,
+  name: "John Doe",
+  settings: {
+    theme: "dark",
+    notifications: {
+      email: true,
+      sms: false,
+    },
+  },
+  posts: [
+    { id: 1, title: "Hello", comments: [{ text: "Nice post!" }] },
+    { id: 2, title: "World" },
+  ],
+  getStatus: () => "Active",
+};
+
+// TASKS:
+
+// 1. Get the user's preferred theme, default to "light" if missing.
+// 2. Check if the user has SMS notifications enabled; default to false.
+// 3. Get the text of the first comment of the second post; default to "No comments".
+// 4. Call the getStatus function safely; default to "Unknown" if missing.
+// 5. Safely access a deeply nested field that doesn't exist (e.g., userProfile.settings.layout.mode); default to "standard".
+About
+No description, website, or topics provided.
+Resources
+ Readme
+ Activity
+Stars
+ 0 stars
+Watchers
+ 0 watching
+Forks
+ 1 fork
+Report repository
+Releases
+No releases published
+Packages
+No packages published
+Languages
+JavaScript
+62.2%
+ 
+HTML
+37.8%
