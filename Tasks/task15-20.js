@@ -66,22 +66,39 @@ function findTaxableIncome(gross, NSSF, NHDF, NHIF){
 }
 
 //19
-function findPaye(tax_inc){
-    let paye = 0
-    let relief = 2400
-    if (tax_inc <= 24000 && tax_inc >= 0){
-        paye = 24000 * 0.1
-    } else if (tax_inc <= 32333 && tax_inc > 24000){
-        paye = (24000 * 0.1) + 8333 * 0.25
-    } else if (tax_inc <= 500000 && tax_inc > 32333){
-        paye = (24000 * 0.1) + (8333 * 0.25) + (467667 * 0.3) 
-    } else if (tax_inc <= 800000 && tax_inc > 500000){
-        paye = (24000 * 0.1) + (8333 * 0.25) + (467667 * 0.3) + 300000 * 0.325
-    } else if (tax_inc > 800000){
-        paye = (24000 * 0.1) + (8333 * 0.25) + (467667 * 0.3) +( 300000 * 0.325) + (800000 * 0.35);
+function findPaye(tax_inc) {
+    let relief = 2400;
+    let paye = 0;
+
+    if (tax_inc <= 24000) {
+        paye = tax_inc * 0.10;
+    } 
+    else if (tax_inc <= 32333) {
+        paye = (24000 * 0.10) +
+               (tax_inc - 24000) * 0.25;
+    } 
+    else if (tax_inc <= 500000) {
+        paye = (24000 * 0.10) +
+               (8333 * 0.25) +
+               (tax_inc - 32333) * 0.30;
+    } 
+    else if (tax_inc <= 800000) {
+        paye = (24000 * 0.10) +
+               (8333 * 0.25) +
+               (467667 * 0.30) +
+               (tax_inc - 500000) * 0.325;
+    } 
+    else {
+        paye = (24000 * 0.10) +
+               (8333 * 0.25) +
+               (467667 * 0.30) +
+               (300000 * 0.325) +
+               (tax_inc - 800000) * 0.35;
     }
-    return paye - relief
+
+    return paye - relief;
 }
+
 
 //20
 function getNetSal(gross, nhif, nhdf, nssf, payee){
